@@ -57,3 +57,6 @@
 ### **Test Coverage**
 ![Test Coverage](./public/images/test_cove.png)
 
+---
+*TODO: more comprehensive tests*
+
