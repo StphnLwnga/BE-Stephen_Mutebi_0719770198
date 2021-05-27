@@ -1,4 +1,4 @@
-# BE-Stephen_Mutebi_0719770198
+# **App Installation**
 ## **Getting Started**
 - Clone the project and navigate into the project's root folder inside a terminal
 
