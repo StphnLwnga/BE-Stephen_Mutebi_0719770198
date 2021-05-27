@@ -17,6 +17,7 @@
 
 
 ## **Setting up**
+- The data is stored in a mysql database.
 - Import the database **`node_app.sql`** from the project root.
 
 - Create a **`.env`** file in the project root and define the following variables
@@ -28,7 +29,6 @@
     DB_PASSWORD=
     DB_PORT=
     DB_DATABASE=
-    DB_DIALECT=mysql
     ```
 
 - Start the app with the following command
