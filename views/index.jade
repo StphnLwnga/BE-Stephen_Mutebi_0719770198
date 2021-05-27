@@ -1,15 +1,21 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1.text-center= title
   br
   br
   .container
     .row
-      table.table.table-dark.table-striped
-        thead
-          tr
-            th(scope='col') Genre
-            th(scope='col') Number of movies
+      if data
+        table.table.table-striped
+          thead
+            tr
+              th(scope='col') Genre
+              th(scope='col') Movie Count
+            each row in data
+              tr
+                td #{row.genre}
+                td #{row.movieCount}
+      else
+        h1.text-secondary.text-center Data Not Found 
     

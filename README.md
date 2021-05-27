@@ -29,10 +29,6 @@
     DB_PORT=
     DB_DATABASE=
     DB_DIALECT=mysql
-    DB_POOL_MAX=5
-    DB_POOL_MIN=0
-    DB_POOL_IDLE=30000
-    DB_POOL_ACQ=10000
     ```
 
 - Start the app with the following command
@@ -41,5 +37,15 @@
     $ npm start
     ```
 - Open the app at **[localhost:3000](http://127.0.0.1:3000)**
+
+## **Screenshots**
+
+### **Application Output**
+
+![App Output](./public/images/bd_app_movie_count.png)
+
+### **Test Results**
+
+### **Test Coverage**
 
 

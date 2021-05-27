@@ -26,26 +26,20 @@ router.get('/', function (req, res, next) {
   });
   global.db = db;
 
-  db.promise()
-    .execute(`SELECT g.genreID, g.genre,
-      COUNT(m.movieID) as movieCount
-      FROM Genres g LEFT JOIN MoviesGenres m
-      ON m.genreID = g.genreID
-      GROUP BY g.genreID, g.genre;`
-    )
-    .then(([rows]) => {
-      console.log(rows)
-      // // show the first user name
-      // console.log(rows[0].name);
-      // // show the all users name
-      // rows.forEach(user => {
-      //   console.log(user.name);
-      // });
-    }).catch(err => {
-      console.log(err);
-    });
+  const sql= `SELECT g.genreID, g.genre,
+    COUNT(m.movieID) as movieCount
+    FROM Genres g LEFT JOIN MoviesGenres m
+    ON m.genreID = g.genreID
+    GROUP BY g.genreID, g.genre;`;
 
-  res.render('index', { title: 'Express' });
+  db.promise()
+    .execute(sql)
+    .then(([rows]) => {
+      // console.log(rows)
+      res.render('index', { title: 'BD Technical Test', data: rows });
+    }).catch(err => {
+      throw err;
+    });
 });
 
 module.exports = router;
