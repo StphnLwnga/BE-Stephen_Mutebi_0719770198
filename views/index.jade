@@ -3,3 +3,13 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  br
+  br
+  .container
+    .row
+      table.table.table-dark.table-striped
+        thead
+          tr
+            th(scope='col') Genre
+            th(scope='col') Number of movies
+    
