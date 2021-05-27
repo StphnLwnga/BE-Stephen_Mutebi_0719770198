@@ -3,17 +3,22 @@
 - Clone the project and navigate into the project's root folder inside a terminal
 
     ```shell
-    git clone https://github.com/StphnLwnga/BE-Stephen_Mutebi_0719770198.git
+    $ git clone https://github.com/StphnLwnga/BE-Stephen_Mutebi_0719770198.git
     ```
     ```shell
-    cd BE-Stephen_Mutebi_0719770198
+    $ cd BE-Stephen_Mutebi_0719770198
     ```
 
 -  Install the necessary node modules
 
     ```shell
-    npm install
+    $ npm install
     ```
+
+
+## **Setting up**
+- Import the database **`node_app.sql`** from the project root.
+
 - Create a **`.env`** file in the project root and define the following variables
 
     ```s
@@ -33,10 +38,8 @@
 - Start the app with the following command
 
     ```shell
-    npm start
+    $ npm start
     ```
 - Open the app at **[localhost:3000](http://127.0.0.1:3000)**
 
-## **Setting up the database**
-- Import the database **`node_app.sql`** from the project root.
 
