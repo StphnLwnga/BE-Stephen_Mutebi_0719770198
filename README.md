@@ -17,7 +17,7 @@
 - Create a **`.env`** file in the project root and define the following variables
 
     ```s
-    PORT=
+    PORT=3000
     DB_HOST=
     DB_USER=
     DB_PASSWORD=
@@ -35,6 +35,8 @@
     ```shell
     npm start
     ```
+- Open the app at **[localhost:3000](http://127.0.0.1:3000)**
+
 ## **Setting up the database**
 - Import the database **`node_app.sql`** from the project root.
 
