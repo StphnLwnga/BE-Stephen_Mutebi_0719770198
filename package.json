@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test1": "jest --watchAll --json --outputFile=test-results.json",
+    "test": "nyc mocha 'tests/**/*.js' --recursive --reporter mocha-junit-reporter --timeout 60000 --exit"
   },
   "dependencies": {
+    "@databases/mysql-test": "^3.1.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^10.0.0",
@@ -17,10 +19,19 @@
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
     "pug": "^3.0.2",
-    "sequelize": "^6.6.2"
+    "sequelize": "^6.6.2",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "jest": "^27.0.1",
+    "mocha": "^8.4.0",
+    "mocha-junit-reporter": "^2.0.0",
     "nodemon": "^2.0.7",
-    "sequelize-cli": "^6.2.0"
+    "nyc": "^15.1.0",
+    "sequelize-cli": "^6.2.0",
+    "sequelize-mock": "^0.10.2",
+    "supertest": "^6.1.3"
   }
 }

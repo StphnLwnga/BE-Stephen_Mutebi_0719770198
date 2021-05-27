@@ -38,6 +38,13 @@
     ```
 - Open the app at **[localhost:3000](http://127.0.0.1:3000)**
 
+## **Run tests**
+- To run tests
+    ```shell
+    $ npm run test
+    ```
+- Test results are store in **`test-results.xml`**
+
 ## **Screenshots**
 
 ### **Application Output**
@@ -45,7 +52,8 @@
 ![App Output](./public/images/bd_app_movie_count.png)
 
 ### **Test Results**
+![Test Results](./public/images/test-res.png)
 
 ### **Test Coverage**
-
+![Test Coverage](./public/images/test_cove.png)
 

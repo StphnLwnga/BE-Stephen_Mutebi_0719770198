@@ -22,7 +22,7 @@ router.get('/', function (req, res, next) {
   // Connect to database
   db.connect(err => {
     if (err) throw err;
-    console.log(`Connected to database - ${process.env.DB_DATABASE}`);
+    // console.log(`Connected to database - ${process.env.DB_DATABASE}`);
   });
   global.db = db;
 
@@ -35,7 +35,6 @@ router.get('/', function (req, res, next) {
   db.promise()
     .execute(sql)
     .then(([rows]) => {
-      // console.log(rows)
       res.render('index', { title: 'BD Technical Test', data: rows });
     }).catch(err => {
       throw err;

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.6040" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-05-27T23:22:45" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="/GET" timestamp="2021-05-27T23:22:45" tests="1" file="/home/stephen/Desktop/BE-Stephen_Mutebi_0719770198/tests/app.spec.js" time="0.2970" failures="0">
+    <testcase name="/GET it should load the index page" time="0.2970" classname="it should load the index page">
+    </testcase>
+  </testsuite>
+  <testsuite name="Test database connection" timestamp="2021-05-27T23:22:45" tests="1" file="/home/stephen/Desktop/BE-Stephen_Mutebi_0719770198/tests/app.spec.js" time="0.3070" failures="0">
+    <testcase name="Test database connection should successfully connect to the database" time="0.3070" classname="should successfully connect to the database">
+    </testcase>
+  </testsuite>
+  <testsuite name="#fail" timestamp="2021-05-27T23:22:45" tests="1" file="/home/stephen/Desktop/BE-Stephen_Mutebi_0719770198/tests/app.spec.js" time="0.0000" failures="0">
+    <testcase name="Test database connection #fail should return -1 because of wrong credentials" time="0.0000" classname="should return -1 because of wrong credentials">
+    </testcase>
+  </testsuite>
+</testsuites>
